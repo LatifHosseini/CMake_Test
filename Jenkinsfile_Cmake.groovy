@@ -1,9 +1,9 @@
 pipeline {
     agent { label 'Agent ' }
-    tools {
+   // tools {
         //maven 'mvn-default'
-          CMake
-    }
+        //  CMake
+   // }
 
     stages {
         stage('checkout') {
@@ -17,6 +17,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
+                sh 'chmod +x Bash_script.sh'
+                sh '/.Bash_script.sh'
+                
             }
         }
         
