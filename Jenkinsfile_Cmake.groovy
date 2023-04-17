@@ -2,7 +2,7 @@ pipeline {
     agent { label 'Agent ' }
     tools {
         //maven 'mvn-default'
-          jdk 'jdk-default'
+          CMake
     }
 
     stages {
