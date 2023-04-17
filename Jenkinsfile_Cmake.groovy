@@ -5,6 +5,13 @@ pipeline {
         //jdk 'jdk-default'
     }
     stages {
+        stage ('CHECKOUT') {
+            steps {
+                    cleanWs()
+                    checkout scm
+            }
+        }
+        
         stage ('Build') {
             steps {
                // sh '${M2_HOME}/bin/mvn --batch-mode -V -U -e clean verify -Dsurefire.useFile=false -Dmaven.test.failure.ignore'
