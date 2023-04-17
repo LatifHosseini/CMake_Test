@@ -14,13 +14,13 @@ pipeline {
             }
         }
         
-        stage('Hello') {
+        stage('Build') {
             steps {
                 echo 'Hello World'
             }
         }
         
-        stage('Hello') {
+        stage('Test') {
             steps {
                 echo 'Hello World'
             }
