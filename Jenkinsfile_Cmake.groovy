@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
     agent { label 'Agent ' }
     tools {
         //maven 'mvn-default'
