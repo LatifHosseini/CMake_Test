@@ -18,8 +18,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 sh 'chmod +x Bash_script.sh'
-                sh 'Bash_script.sh'
-                
+                sh 'Bash_script.sh'  
             }
         }
         
