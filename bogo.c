@@ -1,7 +1,7 @@
 /* bogo.c */
-#include <stdio.h>
+#include <iostream>
 
-int main()
-{   g
-    printf("bogo CMake test\n");
+int main(int argc, char** argv){
+	std::cout << "Hello World" << std::endl;
+	return 0;
 }
