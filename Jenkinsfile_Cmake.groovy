@@ -39,9 +39,12 @@ pipeline {
             echo 'I am in recordIssues'
             recordIssues(tools: [gcc()])
             
-            //To save multiple files from a specific folder:
+            
             //Directory/**/*.* -> All the files recursively under Directory
-            archiveArtifacts artifacts: 'build/**/*.* '
+            //archiveArtifacts artifacts: 'build/**/*.*'
+            
+            //**/*.* -> all the files in the workspace
+            archiveArtifacts artifacts:**/*.* 
         }
     }
 }
