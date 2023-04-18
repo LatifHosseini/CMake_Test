@@ -35,7 +35,7 @@ pipeline {
     }
     
     post { 
-        always { 
+        failure { 
             echo 'I am in recordIssues'
             recordIssues(tools: [gcc()])
         }
