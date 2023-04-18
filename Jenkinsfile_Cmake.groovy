@@ -13,17 +13,11 @@ pipeline {
                  checkout scm
             }
         }
-        stage('make directory') {
-            steps {
-                echo 'make directory'
-                sh ' mkdir build && cd build '
-               
-            }
-        }
+        
         stage('Build') {
             steps {
                 echo 'Hello World'
-                 
+                 cmake 'InSearchPath'
                // sh 'chmod +x $(pwd)/ Bash_script.sh'
                // sh '$(pwd)/Bash_script.sh'  
                 // sh '$(pwd)/Script_Yocto_SDV_EVAL.sh'
