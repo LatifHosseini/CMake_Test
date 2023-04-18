@@ -37,7 +37,7 @@ pipeline {
     post { 
         always { 
             echo 'I am in recordIssues'
-            recordIssues(tools: [gcc(pattern: "rw/build-analysis.log")])
+            recordIssues(tools: [gcc()])
         }
     }
 }
