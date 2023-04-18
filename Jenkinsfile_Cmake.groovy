@@ -44,7 +44,7 @@ pipeline {
             //archiveArtifacts artifacts: 'build/**/*.*'
             
             //**/*.* -> all the files in the workspace
-            archiveArtifacts artifacts:**/*.* 
+            archiveArtifacts artifacts:'**/*.* '
         }
     }
 }
