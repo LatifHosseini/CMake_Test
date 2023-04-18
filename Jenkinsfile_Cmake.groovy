@@ -16,7 +16,7 @@ pipeline {
         stage('make directory') {
             steps {
                 echo 'make directory'
-                 mkdir build && cd build
+                sh ' mkdir build && cd build '
                
             }
         }
