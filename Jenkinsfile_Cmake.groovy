@@ -19,7 +19,7 @@ pipeline {
                 echo 'Hello World'
                  cmakeBuild buildDir: 'build', installation: 'InSearchPath', sourceDir: '.'
                  dir('build') { 
-                 sh 'make .'
+                 sh 'make'
                   }    
                // sh 'chmod +x $(pwd)/ Bash_script.sh'
                // sh '$(pwd)/Bash_script.sh'  
