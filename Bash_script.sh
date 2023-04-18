@@ -1,3 +1,3 @@
 #!/bin/bash
-
-sh 'echo cmake .'
+echo " i am"
+sh ' cmake .'
