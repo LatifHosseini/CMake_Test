@@ -38,6 +38,9 @@ pipeline {
         always { 
             echo 'I am in recordIssues'
             recordIssues(tools: [gcc()])
+            
+            //To save multiple files from a specific folder:
+            archiveArtifacts artifacts: 'build'
         }
     }
 }
