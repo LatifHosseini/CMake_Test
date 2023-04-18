@@ -40,7 +40,8 @@ pipeline {
             recordIssues(tools: [gcc()])
             
             //To save multiple files from a specific folder:
-            archiveArtifacts artifacts: 'build'
+            //Directory/**/*.* -> All the files recursively under Directory
+            archiveArtifacts artifacts: 'build/**/*.* '
         }
     }
 }
