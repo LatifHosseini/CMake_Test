@@ -18,8 +18,8 @@ pipeline {
             steps {
                 echo 'Hello World'
                  cmakeBuild buildDir: 'build', installation: 'InSearchPath', sourceDir: '.'
-                 dir('$(pwd)/build/') { // <<------------
-                 sh 'make'
+                 dir('build') { 
+                 sh 'make .'
                   }    
                // sh 'chmod +x $(pwd)/ Bash_script.sh'
                // sh '$(pwd)/Bash_script.sh'  
