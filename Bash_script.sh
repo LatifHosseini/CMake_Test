@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sh 'Cmake'
+sh 'cmake'
