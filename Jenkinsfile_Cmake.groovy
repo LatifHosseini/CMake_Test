@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                 cmake .
+                 mkdir build && cd build
                // sh 'chmod +x $(pwd)/ Bash_script.sh'
                // sh '$(pwd)/Bash_script.sh'  
                 // sh '$(pwd)/Script_Yocto_SDV_EVAL.sh'
