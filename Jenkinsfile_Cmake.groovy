@@ -46,7 +46,17 @@ pipeline {
             //**/*.* -> all the files in the workspace
             archiveArtifacts artifacts:'**/*.* '
             
-            emailext body: 'HI THIS A TEST MAIL ', subject: 'TEST', to: 'latifho2007@gmail.com'
+            mail(
+        bcc: '',
+        body: "<p>your body</p>",
+        cc: '',
+        charset: 'UTF-8',
+        from: '',
+        mimeType: 'text/html',
+        replyTo: '',
+        subject: "your subject",
+        to: "latifho2007@gmail.com"
+            )  
         }
     }
 }
